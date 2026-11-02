@@ -11,6 +11,10 @@ img{max-width:100%;display:block;border-radius:var(--radius)}
 a{color:var(--gold2)} a:hover{color:#fff}
 h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.05;margin:0 0 .6rem;letter-spacing:-.01em}
 h2{font-size:clamp(2rem,6vw,3.4rem)} h3{font-size:1.35rem}
+/* Suggestion 1: a short gold rule under every section title */
+.section h2::after{content:"";display:block;width:64px;height:3px;margin-top:.9rem;border-radius:3px;background:linear-gradient(90deg,var(--gold),var(--ember2))}
+/* Suggestion 4: gold star rating in the hero — 4.5 of 5, shown as 90% gold */
+.stars{display:inline-block;letter-spacing:.08em;font-size:1.05rem;line-height:1;background:linear-gradient(90deg,var(--gold2) 90%,rgba(203,191,169,.35) 90%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
 p{margin:0 0 1rem} .lead{font-size:1.15rem;color:var(--cream2)}
 .wrap{width:min(1120px,92%);margin:0 auto}
 .skip-link{position:absolute;left:-999px;top:0;background:var(--gold);color:#111;padding:.6rem 1rem;z-index:50}
